@@ -5,7 +5,7 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus;
 
 type
 
@@ -13,6 +13,8 @@ type
 
   TForm1 = class(TForm)
     Button1: TButton;
+    eNAMA: TEdit;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
   private
 
@@ -31,7 +33,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  showmassage('hello world');
+  showmessage('hello'+enama.text);
 
 end;
 
